@@ -1,2 +1,11 @@
 @import "_variables";
 @import "_mixin";
+
+// --------------  publicidad  ---------------
+
+header{
+	div.publicidad1{
+		background-color: #F4F5F7;
+		@include star-height(150px);	
+	}
+}
