@@ -2,7 +2,8 @@
   padding: $padding;
 }
 
-@mixin star-height($height:0px){
+@mixin star-size($width:0px,$height:0px){
+  width: $width;
   height: $height;
 }
 
