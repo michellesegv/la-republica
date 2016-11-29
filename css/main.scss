@@ -1,2 +1,37 @@
 @import "_variables";
 @import "_mixin";
+
+.navbar-temacentral{
+	@include star-border-radius(3px);
+	.boton{
+		background-color:$color-nav-rojo;
+		color: white;
+		border: none;
+		margin:2% 0%;
+		padding: 1%;
+		@include star-font-family(arial, 97%, bold);
+		&:hover{
+			background-color: blue;
+		}
+	}
+}
+.navbar-temasdeldia{
+	.titulo{
+		background-color: $color-nav;
+		color: white;
+		font-size: 85%;
+		text-align: center;
+		padding: 1% 2% 1% 2%;
+		display: inline-block;
+	}
+	.subtitulos{
+		background-color: $color-nav-plomo;
+		padding: 1% 2% 1% 4%;
+		display: inline
+	}
+		a{
+			padding: 0% 1% 1% 2%;
+			display: inline-block;
+			color: $color-nav;
+		}
+}
