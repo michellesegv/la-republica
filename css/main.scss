@@ -1,153 +1,219 @@
 @import "_variables";
 @import "_mixin";
+
+//NAVBAR
+.navbar-temacentral{
+	.boton{
+		background-color:$color-nav-rojo;
+		color: white;
+		border: none;
+		margin:2% 0%;
+		padding: 1%;
+		@include star-font-family(arial, 97%, bold);
+		&:hover{
+			background-color: blue;
+		}
+	}
+	.boton-radio-left{
+		@include star-border-radius-boton;
+	}
+	.boton-radio-right{
+		@include star-border-radius-boton($orientacion:right);
+	}
+}
+.navbar-temasdeldia{
+	.titulo{
+		background-color: $color-nav;
+		color: white;
+		font-size: 85%;
+		text-align: center;
+		padding: 1% 2% 1% 2%;
+		display: inline-block;
+	}
+	.boton-radio-left{
+		@include star-border-radius-boton;
+	}
+	.subtitulos{
+		background-color: $color-nav-plomo;
+		padding: 1% 2% 1% 4%;
+		display: inline
+	}
+	.boton-radio-right{
+		@include star-border-radius-boton($orientacion:right);
+	}
+	a{
+		padding: 0% 1% 1% 2%;
+		display: inline-table;
+		color: gray;
+	}
+}
+
+//FORMULARIO
 .form{
-  h1{
-    @include star-font-family($font-size:50px,$font-weight:lighter);
-    @include star-text;
-  }
-  p{
-    @include star-padding($padding:20px 0);
-    @include star-text($text-align:left);
-    @include star-font-family($font-family: $family-letra , $font-size:17px, $font-weight:normal)
-      }
-  .container-especial{
-    @include star-padding($padding:0 25%);
-    @include star-margin($margin:0 auto);
-    form{
-      div{
-        input,input:focus{
-          background-color: $color-input;
-          border: 1px solid #9A9A9A;
-          border-bottom: 0;
-          border-right: 0;
-          outline: 0;
-          box-shadow: $none;
-          @include star-margin($margin:30px 0 5px 0);
-          @include star-padding($padding:20px 15px);
-          @include star-font-family($font-family:$family-letra,$font-size:18px,$font-weight:lighter);
-        }
-        .opcional{
-          @include star-padding;
-        }
-      }
-      textarea{
-        background-color: $color-input;
-        @include star-border($border:0);
-        border-top: 1px solid #9A9A9A;
-        outline: 0;
-        @include star-padding($padding:15px);
-        @include star-size($width:100%,$height:auto);
-        @include star-font-family($font-family:$family-letra,$font-size:18px,$font-weight:lighter);
-        @include star-margin($margin:0 0 25px 0)
-          }
-      button{
-        background-color: $color-boton;
-        color: white;
-        @include star-padding($padding:10px 80px);
-        @include star-margin($margin:0 auto 50px auto);
-        display: inherit;
-      }
-      h3{
-        @include star-padding($padding: 30px 0 0 0);
-      }
-      ul{
-        @include star-padding($padding:0 0 30px 0);
-        li{
-          list-style: none;
-          line-height: 28px;
-          span.text-posicion{
-            float: right;
-          }
-        }
-      }
-    }
-  }
+	h1{
+		@include star-font-family($font-size:50px,$font-weight:lighter);
+		@include star-text;
+	}
+	p{
+		@include star-padding($padding:20px 0);
+		@include star-text($text-align:left);
+		@include star-font-family($font-family: $family-letra , $font-size:17px, $font-weight:normal)
+			}
+	.container-especial{
+		@include star-padding($padding:0 25%);
+		@include star-margin($margin:0 auto);
+		form{
+			div{
+				input,input:focus{
+					background-color: $color-input;
+					border: 1px solid #9A9A9A;
+					border-bottom: 0;
+					border-right: 0;
+					outline: 0;
+					box-shadow: $none;
+					@include star-margin($margin:30px 0 5px 0);
+					@include star-padding($padding:20px 15px);
+					@include star-font-family($font-family:$family-letra,$font-size:18px,$font-weight:lighter);
+				}
+				.opcional{
+					@include star-padding;
+				}
+			}
+			textarea{
+				background-color: $color-input;
+				@include star-border($border:0);
+				border-top: 1px solid #9A9A9A;
+				outline: 0;
+				@include star-padding($padding:15px);
+				@include star-size($width:100%,$height:auto);
+				@include star-font-family($font-family:$family-letra,$font-size:18px,$font-weight:lighter);
+				@include star-margin($margin:0 0 25px 0)
+					}
+			button{
+				background-color: $color-boton;
+				color: white;
+				@include star-padding($padding:10px 80px);
+				@include star-margin($margin:0 auto 50px auto);
+				display: inherit;
+			}
+			h3{
+				@include star-padding($padding: 30px 0 0 0);
+			}
+			ul{
+				@include star-padding($padding:0 0 30px 0);
+				li{
+					list-style: none;
+					line-height: 28px;
+					span.text-posicion{
+						float: right;
+					}
+				}
+			}
+		}
+	}
 }
 *{
-  @include star-padding;
-  @include star-margin;
+	@include star-padding;
+	@include star-margin;
 }
+
+//FOOTER
 footer{
-  .desktop{
-    @include star-padding($padding-footer);
-    background: $color-footer;
-    span{
-      display: $block;
-      cursor: pointer;
-      &:hover{
-        color: #AEA3A3;
-      }
-    }
-    .enlaces-footer{
-      @include margin-padding($padding-footer, $margin-footer);
-      border-bottom: $border-left-right;
-      img{
-        margin-top: 100px;
-      }
-    }
-    li{
-      display: $inline-block;
-      border-right: 2px solid #AEA3A3;
-      padding-right: $padding-footer - 1.5;
-    }
-    li:last-child{
-      border-right:none;
-    }
-    .enlaces-border-row {
-      border-left: $border-left-right;
-      padding-left: $padding-footer * 2;
-    }
-  }
-  .tablet{
-    display: $none;
-  }
+	.desktop{
+		@include star-padding($padding-footer);
+		background: $color-footer;
+		span{
+			display: $block;
+			cursor: pointer;
+			&:hover{
+				color: #AEA3A3;
+			}
+		}
+		.enlaces-footer{
+			@include margin-padding($padding-footer, $margin-footer);
+			border-bottom: $border-left-right;
+			img{
+				margin-top: 100px;
+			}
+		}
+		li{
+			display: $inline-block;
+			border-right: 2px solid #AEA3A3;
+			padding-right: $padding-footer - 1.5;
+		}
+		li:last-child{
+			border-right:none;
+		}
+		.enlaces-border-row {
+			border-left: $border-left-right;
+			padding-left: $padding-footer * 2;
+		}
+	}
+	.tablet{
+		display: $none;
+	}
 }
+
+//MEDIA 769px
 @media (max-width:769px){
-  .form{
-    @include star-font-family($font-family: $family-letra  , $font-size:16px, $font-weight:normal);
+	.form{
+		@include star-font-family($font-family: $family-letra  , $font-size:16px, $font-weight:normal);
 
-    .container-especial{
-      @include star-padding($padding:0 12%);
-      ul{
-        @include star-font-family($font-family:$family-letra,$font-size:16px,$font-weight:lighter);
-      }
-    }
-  }
-  .desktop{
-    display: $none;
-  }
-  .tablet{
-    display: $block;
-    background: $color-negro;
-    color: $color-blanco;
-    @include star-padding($padding:3%);
-    h2{
-      @include star-font-family($font-family: arial , $font-size:15px, $font-weight:normal);
-    }
-    h4{
-      @include star-font-family($font-family: arial , $font-size:9px, $font-weight:normal);
-    }
-  }
+		.container-especial{
+			@include star-padding($padding:0 12%);
+			ul{
+				@include star-font-family($font-family:$family-letra,$font-size:16px,$font-weight:lighter);
+			}
+		}
+	}
+	.desktop{
+		display: $none;
+	}
+	.tablet{
+		display: $block;
+		background: $color-negro;
+		color: $color-blanco;
+		@include star-padding($padding:3%);
+		h2{
+			@include star-font-family($font-family: arial , $font-size:15px, $font-weight:normal);
+		}
+		h4{
+			@include star-font-family($font-family: arial , $font-size:9px, $font-weight:normal);
+		}
+	}
 }
 
-@media (max-width:375px) and (max-width:420px){
-  .form{
-    h1{
-      @include star-font-family($font-family: $family-letra , $font-size:45px, $font-weight:normal);
-    }
-    p{
-      line-height: 23px;
-      @include star-padding($padding:25px 1px);
-      @include star-font-family($font-family:$family-letra , $font-size:16px, $font-weight:normal);
-    }
-    .container-especial{
-      @include star-padding($padding:0 3%);
-    }
-    .opcional{
-      @include star-padding;
-    }
-    .text-posicion{
-      float: none !important;
-    }
-  }
+//MEDIA 375px
+@media (max-width:375px){
+	.form{
+		h1{
+			@include star-font-family($font-family: $family-letra , $font-size:45px, $font-weight:normal);
+		}
+		p{
+			line-height: 23px;
+			@include star-padding($padding:25px 1px);
+			@include star-font-family($font-family:$family-letra , $font-size:16px, $font-weight:normal);
+		}
+		.container-especial{
+			@include star-padding($padding:0 3%);
+		}
+		.opcional{
+			@include star-padding;
+		}
+		.text-posicion{
+			float: none !important;
+		}
+	}
+	.navbar-temasdeldia{
+		text-align: center;
+		.subtitulos{
+			padding:1% 4% 1% 3%;
+			a{
+				padding:0% 3% 1% 2%;
+			}
+			.ocultar, span{
+				display: none;
+			}
+		}
+	}
 }
