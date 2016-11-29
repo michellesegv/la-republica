@@ -4,8 +4,75 @@
 // --------------  publicidad  ---------------
 
 header{
+	
 	div.publicidad1{
 		background-color: #F4F5F7;
-		@include star-height(150px);	
+		@include star-padding(10px 0 10px 0);
+		border-bottom: 1px solid $color-nav-plomo;
+	}
+	a{
+		display: inline-block;
+		width: 100%;
+	}
+	img{
+		width: 100%;
+		@include star-margin(0 0 12px 0);
+	}
+	.menuBanner{
+		div{
+			div{
+				div a{
+					@include star-font-family(arial, 11px, bold);
+					color: $color-menu-banner;
+				}
+			}
+		}
+		div{
+			.fa-facebook{
+				color: $color-fb;
+			}
+			.fa-twitter{
+				color: $color-twitter;
+			}
+			.fa-google-plus{
+				color: #CA4B5B;
+			}
+			.fa-envelope{
+				color: $color-correo;
+			}
+			.fa-rss{
+				color: #FF8000;
+			}
+		}
+		div{
+			div{
+				button{
+					background-color: $color-btn-suscribete;
+					@include star-font-family(arial, 11px, bold);
+					color: #ffffff;
+					border: 1px solid $color-btn-suscribete;
+					@include star-border-radius(5px);
+				}
+			}
+			div{
+				input{
+					@include star-font-family(arial, 11px, bold);
+					background-color: transparent;
+					border: 1px solid transparent;
+				}
+			}
+		}
+	}
+}
+
+section.logo{
+	@include star-margin(30px 0 10px 0);
+	
+	div{
+		div{
+			div{
+
+			}
+		}
 	}
 }
