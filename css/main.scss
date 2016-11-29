@@ -2,7 +2,6 @@
 @import "_mixin";
 
 .navbar-temacentral{
-	@include star-border-radius(3px);
 	.boton{
 		background-color:$color-nav-rojo;
 		color: white;
@@ -14,6 +13,12 @@
 			background-color: blue;
 		}
 	}
+	.boton-radio-left{
+		@include star-border-radius-boton;
+	}
+	.boton-radio-right{
+		@include star-border-radius-boton($orientacion:right);
+	}
 }
 .navbar-temasdeldia{
 	.titulo{
@@ -24,14 +29,37 @@
 		padding: 1% 2% 1% 2%;
 		display: inline-block;
 	}
+	.boton-radio-left{
+		@include star-border-radius-boton;
+	}
 	.subtitulos{
 		background-color: $color-nav-plomo;
 		padding: 1% 2% 1% 4%;
 		display: inline
 	}
+	.boton-radio-right{
+		@include star-border-radius-boton($orientacion:right);
+	}
 		a{
 			padding: 0% 1% 1% 2%;
-			display: inline-block;
-			color: $color-nav;
+			display: inline-table;
+			color: gray;
 		}
+
 }
+@media only screen and (max-width:500px){
+	.navbar-temasdeldia{
+		text-align: center;
+		.subtitulos{
+			padding:1% 4% 1% 3%;
+			a{
+				padding:0% 3% 1% 2%;
+			}
+			.ocultar, span{
+				display: none;
+			}
+			
+		}
+	}
+}
+
