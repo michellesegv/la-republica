@@ -4,9 +4,8 @@
 // --------------  publicidad  ---------------
 
 header{
-	
+	background-color: #F4F5F7;
 	div.publicidad1{
-		background-color: #F4F5F7;
 		@include star-padding(10px 0 10px 0);
 		border-bottom: 1px solid $color-nav-plomo;
 	}
@@ -28,6 +27,11 @@ header{
 			}
 		}
 		div{
+			.redes{
+				@include star-font-family(arial, 15px, bold);
+				display: inline !important;
+				margin-left: 7%;
+			}
 			.fa-facebook{
 				color: $color-fb;
 			}
@@ -50,7 +54,7 @@ header{
 					background-color: $color-btn-suscribete;
 					@include star-font-family(arial, 11px, bold);
 					color: #ffffff;
-					border: 1px solid $color-btn-suscribete;
+					border: none;
 					@include star-border-radius(5px);
 				}
 			}
@@ -58,7 +62,9 @@ header{
 				input{
 					@include star-font-family(arial, 11px, bold);
 					background-color: transparent;
+					display: inline !important;
 					border: 1px solid transparent;
+					width: 60px;
 				}
 			}
 		}
@@ -67,12 +73,67 @@ header{
 
 section.logo{
 	@include star-margin(30px 0 10px 0);
-	
 	div{
+		.img-logo{
+			@include star-margin(20px 0 20px 0px);
+		}
+		.cuadro-borde{
+			// position: relative;
+			@include star-padding(40px 0 10px 15px);
+			border: 1px solid gray;
+			@include star-font-family(arial, 11px, bold);
+			// @include star-margin(0 0 30px 0);
+		}
+		.tema-dia{
+			border-bottom: 3px solid $color-guinda;		
+			.domingo{
+				position: absolute;
+				top: -15%;
+				background-color: $color-guinda;
+				@include star-padding(10px 10px 0 10px);
+				color: #ffffff;
+				right: 38%;
+			}
+		}
+		.bloque_editorial_text{
+			width: 80%;
+			position: relative;
+			@include star-padding(20px 0 10px 10px);
+			@include star-border-radius(5px);
+			background-color: #2C3238;
+			position: absolute;
+		}
+		.nota-autor{
+			width: 80%;
+			position: absolute;
+			right: 4%;
+			@include star-padding(16px 0 10px 0px);
+			background-color: #ffffff;
+			@include star-border-radius(5px);
+			.img-nota-autor{
+				// display: inline !important;
+				position: absolute;
+				right: -2%;
+				top: -1%;
+				img{
+					width: 115%;
+				}
+			}
+		}		
+	}
+}
+
+@media (min-width:320px) and (max-width:412px){
+	header{
+		.menuBanner{
 		div{
 			div{
-
+				div a{
+					@include star-font-family(arial, 10px, bold);
+					color: $color-menu-banner;
+				}
 			}
 		}
 	}
+	}	
 }

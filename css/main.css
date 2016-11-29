@@ -1,44 +1,97 @@
-header div.publicidad1 {
-  background-color: #F4F5F7;
-  padding: 10px 0 10px 0;
-  border-bottom: 1px solid #E4E7EA; }
-header a {
-  display: inline-block;
-  width: 100%; }
-header img {
-  width: 100%;
-  margin: 0 0 12px 0; }
-header .menuBanner div div div a {
-  font-family: arial;
-  font-size: 11px;
-  font-weight: bold;
-  color: #7D7D7D; }
-header .menuBanner div .fa-facebook {
-  color: #2A65A3; }
-header .menuBanner div .fa-twitter {
-  color: #4BB7D9; }
-header .menuBanner div .fa-google-plus {
-  color: #CA4B5B; }
-header .menuBanner div .fa-envelope {
-  color: #FCC82C; }
-header .menuBanner div .fa-rss {
-  color: #FF8000; }
-header .menuBanner div div button {
-  background-color: #DD4A4A;
-  font-family: arial;
-  font-size: 11px;
-  font-weight: bold;
-  color: #ffffff;
-  border: 1px solid #DD4A4A;
-  border-radius: 5px; }
-header .menuBanner div div input {
-  font-family: arial;
-  font-size: 11px;
-  font-weight: bold;
-  background-color: transparent;
-  border: 1px solid transparent; }
+header {
+  background-color: #F4F5F7; }
+  header div.publicidad1 {
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #E4E7EA; }
+  header a {
+    display: inline-block;
+    width: 100%; }
+  header img {
+    width: 100%;
+    margin: 0 0 12px 0; }
+  header .menuBanner div div div a {
+    font-family: arial;
+    font-size: 11px;
+    font-weight: bold;
+    color: #7D7D7D; }
+  header .menuBanner div .redes {
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline !important;
+    margin-left: 7%; }
+  header .menuBanner div .fa-facebook {
+    color: #2A65A3; }
+  header .menuBanner div .fa-twitter {
+    color: #4BB7D9; }
+  header .menuBanner div .fa-google-plus {
+    color: #CA4B5B; }
+  header .menuBanner div .fa-envelope {
+    color: #FCC82C; }
+  header .menuBanner div .fa-rss {
+    color: #FF8000; }
+  header .menuBanner div div button {
+    background-color: #DD4A4A;
+    font-family: arial;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px; }
+  header .menuBanner div div input {
+    font-family: arial;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: transparent;
+    display: inline !important;
+    border: 1px solid transparent;
+    width: 60px; }
 
 section.logo {
   margin: 30px 0 10px 0; }
+  section.logo div .img-logo {
+    margin: 20px 0 20px 0px; }
+  section.logo div .cuadro-borde {
+    padding: 40px 0 10px 15px;
+    border: 1px solid gray;
+    font-family: arial;
+    font-size: 11px;
+    font-weight: bold; }
+  section.logo div .tema-dia {
+    border-bottom: 3px solid #941010; }
+    section.logo div .tema-dia .domingo {
+      position: absolute;
+      top: -15%;
+      background-color: #941010;
+      padding: 10px 10px 0 10px;
+      color: #ffffff;
+      right: 38%; }
+  section.logo div .bloque_editorial_text {
+    width: 80%;
+    position: relative;
+    padding: 20px 0 10px 10px;
+    border-radius: 5px;
+    background-color: #2C3238;
+    position: absolute; }
+  section.logo div .nota-autor {
+    width: 80%;
+    position: absolute;
+    right: 4%;
+    padding: 16px 0 10px 0px;
+    background-color: #ffffff;
+    border-radius: 5px; }
+    section.logo div .nota-autor .img-nota-autor {
+      position: absolute;
+      right: -2%;
+      top: -1%; }
+      section.logo div .nota-autor .img-nota-autor img {
+        width: 115%; }
+
+@media (min-width: 320px) and (max-width: 412px) {
+  header .menuBanner div div div a {
+    font-family: arial;
+    font-size: 10px;
+    font-weight: bold;
+    color: #7D7D7D; } }
 
 /*# sourceMappingURL=main.css.map */
