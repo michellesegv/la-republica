@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+.container h1 {
+  font-family: arial;
+  font-size: 50px;
+  font-weight: lighter;
+  text-align: center; }
+.container .container-especial {
+  padding-right: 25%;
+  padding-left: 25%;
+  margin: 0 auto; }
+  .container .container-especial form div input, .container .container-especial form div input:focus {
+    background-color: #EEEEEE;
+    border: 1px solid #9A9A9A;
+    border-bottom: 0;
+    border-right: 0;
+    outline: 0;
+    margin: 30px 0 5px 0;
+    padding: 20px 15px;
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: lighter; }
+  .container .container-especial form textarea {
+    background-color: #EEEEEE;
+    border: 1px solid #9A9A9A;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 25px; }
+  .container .container-especial form button {
+    background-color: #080808;
+    color: white;
+    padding: 10px 80px;
+    margin: 0 auto;
+    display: inherit; }
+
+/*# sourceMappingURL=main.css.map */

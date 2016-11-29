@@ -1,2 +1,46 @@
 @import "_variables";
 @import "_mixin";
+.container{
+  h1{
+    @include star-font-family($font-size:50px,$font-weight:lighter);
+    @include star-text;
+  }
+  .container-especial{
+    padding-right: 25%;
+    padding-left: 25%;
+    margin: 0 auto;
+    form{
+      div{
+        input,input:focus{
+          background-color: $color-input;
+          border: 1px solid #9A9A9A;
+          border-bottom: 0;
+          border-right: 0;
+          outline: 0;
+          margin: 30px 0 5px 0;
+          @include star-padding($padding:20px 15px);
+          @include star-font-family($font-family:$family-letra,$font-size:18px,$font-weight:lighter);
+        }
+      }
+      textarea{
+          background-color: $color-input;
+          border: 1px solid #9A9A9A;
+          border-bottom: 0;
+          border-right: 0;
+          border-left: 0;
+          outline: 0;
+          @include star-padding($padding:15px);
+          @include star-size($width:100%,$height:auto);
+          @include star-font-family($font-family:$family-letra,$font-size:18px,$font-weight:lighter);
+          margin-bottom: 25px;
+      }
+      button{
+        background-color: $color-boton;
+        color: white;
+        @include star-padding($padding:10px 80px);
+        margin: 0 auto;
+        display: inherit;
+      }
+    }
+  }
+}
