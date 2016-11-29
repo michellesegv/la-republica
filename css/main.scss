@@ -1,2 +1,31 @@
-@import "_variables";
+@import "_vaiables";
 @import "_mixin";
+
+*{
+	@include star-padding;
+	@include star-margin;
+}
+footer{
+	@include star-padding($padding-footer - 1);
+	background: $color-footer;
+	span{
+		display: block;
+	}
+	.enlaces-footer{
+		padding-bottom: $padding-footer;
+		margin-bottom: $margin-footer;
+		border-bottom: 1px solid #F6F4F4;
+	}
+	li{
+		display: inline-block;
+		border-right: 2px solid #AEA3A3;
+		padding-right: $padding-footer - 1.5;
+	}
+	li:last-child{
+		border-right:none;
+	}
+	.enlaces-border-row {
+		border-left: 1px solid #F6F4F4;
+		padding-left: $padding-footer * 2;
+	}
+}
