@@ -1,6 +1,9 @@
 @import "_vaiables";
 @import "_mixin";
 
+
+// ANABEL CSS FOOTER
+
 *{
 	@include star-padding;
 	@include star-margin;
@@ -12,6 +15,10 @@ footer{
 
 		span{
 			display: $block;
+			cursor: pointer;
+			&:hover{
+				color: #AEA3A3;
+			}
 		}
 		.enlaces-footer{
 			@include margin-padding($padding-footer, $margin-footer);
