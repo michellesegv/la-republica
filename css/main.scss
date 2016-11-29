@@ -1,6 +1,126 @@
 @import "_variables";
 @import "_mixin";
 
+// --------------  publicidad  ---------------
+header{
+	background-color: #F4F5F7;
+	div.publicidad1{
+		@include star-padding(10px 0 10px 0);
+		border-bottom: 1px solid $color-nav-plomo;
+	}
+	a{
+		display: inline-block;
+		width: 100%;
+	}
+	img{
+		width: 100%;
+		@include star-margin(0 0 12px 0);
+	}
+	.menuBanner{
+		div{
+			div{
+				div a{
+					@include star-font-family(arial, 11px, bold);
+					color: $color-menu-banner;
+				}
+			}
+		}
+		div{
+			.redes{
+				@include star-font-family(arial, 15px, bold);
+				display: inline !important;
+				margin-left: 7%;
+			}
+			.fa-facebook{
+				color: $color-fb;
+			}
+			.fa-twitter{
+				color: $color-twitter;
+			}
+			.fa-google-plus{
+				color: #CA4B5B;
+			}
+			.fa-envelope{
+				color: $color-correo;
+			}
+			.fa-rss{
+				color: #FF8000;
+			}
+		}
+		div{
+			div{
+				button{
+					background-color: $color-btn-suscribete;
+					@include star-font-family(arial, 11px, bold);
+					color: #ffffff;
+					border: none;
+					@include star-border-radius(5px);
+				}
+			}
+			div{
+				input{
+					@include star-font-family(arial, 11px, bold);
+					background-color: transparent;
+					display: inline !important;
+					border: 1px solid transparent;
+					width: 60px;
+				}
+			}
+		}
+	}
+}
+section.logo{
+	@include star-margin(30px 0 10px 0);
+	div{
+		.img-logo{
+			@include star-margin(20px 0 20px 0px);
+		}
+		.cuadro-borde{
+			// position: relative;
+			@include star-padding(40px 0 10px 15px);
+			border: 1px solid gray;
+			@include star-font-family(arial, 11px, bold);
+			// @include star-margin(0 0 30px 0);
+		}
+		.tema-dia{
+			border-bottom: 3px solid $color-guinda;
+			.domingo{
+				position: absolute;
+				top: -15%;
+				background-color: $color-guinda;
+				@include star-padding(10px 10px 0 10px);
+				color: #ffffff;
+				right: 38%;
+			}
+		}
+		.bloque_editorial_text{
+			width: 80%;
+			position: relative;
+			@include star-padding(20px 0 10px 10px);
+			@include star-border-radius(5px);
+			background-color: #2C3238;
+			position: absolute;
+		}
+		.nota-autor{
+			width: 80%;
+			position: absolute;
+			right: 4%;
+			@include star-padding(16px 0 10px 0px);
+			background-color: #ffffff;
+			@include star-border-radius(5px);
+			.img-nota-autor{
+				// display: inline !important;
+				position: absolute;
+				right: -2%;
+				top: -1%;
+				img{
+					width: 115%;
+				}
+			}
+		}
+	}
+}
+
 //NAVBAR
 .navbar-temacentral{
 	.boton{
@@ -42,7 +162,7 @@
 		@include star-border-radius-boton($orientacion:right);
 	}
 	a{
-		padding: 0% 1% 1% 2%;
+		padding: 0% 1% 1% 1%;
 		display: inline-table;
 		color: gray;
 	}
@@ -156,6 +276,13 @@ footer{
 
 //MEDIA 769px
 @media (max-width:769px){
+	.nota-autor{
+		width: 89.5% !important;
+	}
+	.navbar-temasdeldia{
+		margin-top: 100px;
+		margin-left: 1.8em;
+	}
 	.form{
 		@include star-font-family($font-family: $family-letra  , $font-size:16px, $font-weight:normal);
 
@@ -185,6 +312,27 @@ footer{
 
 //MEDIA 375px
 @media (max-width:375px){
+	header{
+		.menuBanner{
+			div{
+			.redes{
+				@include star-font-family(arial, 10px, normal);
+			}
+				div{
+					div a{
+						@include star-font-family(arial, 10px, bold);
+						color: $color-menu-banner;
+					}
+				}
+			}
+		}
+		.col-md-4:nth-child(2),.col-md-4:nth-child(3){
+			margin-top: 10px;
+		}
+	}
+	section .cuadro-borde.nota-autor{
+			width: 83% !important;
+		}
 	.form{
 		h1{
 			@include star-font-family($font-family: $family-letra , $font-size:45px, $font-weight:normal);
@@ -206,10 +354,11 @@ footer{
 	}
 	.navbar-temasdeldia{
 		text-align: center;
+		margin-left: 0;
 		.subtitulos{
 			padding:1% 4% 1% 3%;
 			a{
-				padding:0% 3% 1% 2%;
+				padding:0%;
 			}
 			.ocultar, span{
 				display: none;

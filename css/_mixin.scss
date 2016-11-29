@@ -4,6 +4,9 @@
 
 @mixin star-size($width:0px,$height:0px){
   width: $width;
+}
+
+@mixin star-height($height:0px){
   height: $height;
 }
 
@@ -27,9 +30,9 @@
 }
 
 @mixin star-font-family($font-family: arial , $font-size:12px, $font-weight:bold){
-   font-family: $font-family;
-   font-size: $font-size;
-   font-weight: $font-weight;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
 }
 
 @mixin star-margin($margin:0 0 0 0){
