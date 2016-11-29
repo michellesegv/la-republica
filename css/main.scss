@@ -6,26 +6,43 @@
 	@include star-margin;
 }
 footer{
-	@include star-padding($padding-footer - 1);
-	background: $color-footer;
-	span{
-		display: block;
+	.desktop{
+		@include star-padding($padding-footer);
+		background: $color-footer;
+
+		span{
+			display: $block;
+		}
+		.enlaces-footer{
+			@include margin-padding($padding-footer, $margin-footer);
+			border-bottom: $border-left-right;
+		}
+		li{
+			display: $inline-block;
+			border-right: 2px solid #AEA3A3;
+			padding-right: $padding-footer - 1.5;
+		}
+		li:last-child{
+			border-right:none;
+		}
+		.enlaces-border-row {
+			border-left: $border-left-right;
+			padding-left: $padding-footer * 2;
+		}
 	}
-	.enlaces-footer{
-		padding-bottom: $padding-footer;
-		margin-bottom: $margin-footer;
-		border-bottom: 1px solid #F6F4F4;
+
+	.tablet{
+		display: $none;
 	}
-	li{
-		display: inline-block;
-		border-right: 2px solid #AEA3A3;
-		padding-right: $padding-footer - 1.5;
-	}
-	li:last-child{
-		border-right:none;
-	}
-	.enlaces-border-row {
-		border-left: 1px solid #F6F4F4;
-		padding-left: $padding-footer * 2;
+	@media  (max-width: 769px){	
+		.desktop{
+			display: $none;
+		}
+		.tablet{
+			display: $block;
+			background: $color-negro;
+			color: $color-blanco;
+			@include margin-padding($padding-footer - 1, $margin-footer * 0);
+		}
 	}
 }

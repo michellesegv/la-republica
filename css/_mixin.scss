@@ -24,3 +24,8 @@
 @mixin star-margin($margin:0 0 0 0){
    margin: $margin;
 }
+
+@mixin margin-padding($padding-footer, $margin-footer){
+	padding-bottom: $padding-footer;
+	margin-bottom: $margin-footer;
+}
