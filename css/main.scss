@@ -1,6 +1,6 @@
 @import "_variables";
 @import "_mixin";
-.container{
+.form{
   h1{
     @include star-font-family($font-size:50px,$font-weight:lighter);
     @include star-text;
@@ -40,7 +40,7 @@
         background-color: $color-boton;
         color: white;
         @include star-padding($padding:10px 80px);
-        @include star-margin($margin:0 auto);
+        @include star-margin($margin:0 auto 50px auto);
         display: inherit;
       }
       h3{
@@ -62,7 +62,7 @@
   }
 }
 @media (max-width:769px){
-  .container{
+  .form{
     @include star-font-family($font-family: $family-letra  , $font-size:16px, $font-weight:normal);
 
     .container-especial{
@@ -75,9 +75,9 @@
 }
 
 @media (max-width:375px) and (max-width:420px){
-  .container{
+  .form{
     h1{
-     @include star-font-family($font-family: $family-letra , $font-size:45px, $font-weight:normal); 
+     @include star-font-family($font-family: $family-letra , $font-size:45px, $font-weight:normal);
     }
     p{
       line-height: 23px;
@@ -85,7 +85,7 @@
       @include star-font-family($font-family:$family-letra , $font-size:16px, $font-weight:normal);
     }
     .container-especial{
-      @include star-padding($padding:0 3%); 
+      @include star-padding($padding:0 3%);
     }
     .opcional{
       @include star-padding($padding:0);

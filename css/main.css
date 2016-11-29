@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans");
 @import url("https://fonts.googleapis.com/css?family=Droid+Serif");
-.container h1 {
+.form h1 {
   font-family: arial;
   font-size: 50px;
   font-weight: lighter;
   text-align: center; }
-.container p {
+.form p {
   padding: 20px 0;
   text-align: left;
   font-family: PT Sans;
   font-size: 17px;
   font-weight: normal; }
-.container .container-especial {
+.form .container-especial {
   padding: 0 25%;
   margin: 0 auto; }
-  .container .container-especial form div input, .container .container-especial form div input:focus {
+  .form .container-especial form div input, .form .container-especial form div input:focus {
     background-color: #EEEEEE;
     border: 1px solid #9A9A9A;
     border-bottom: 0;
@@ -25,7 +25,7 @@
     font-family: PT Sans;
     font-size: 18px;
     font-weight: lighter; }
-  .container .container-especial form textarea {
+  .form .container-especial form textarea {
     background-color: #EEEEEE;
     border: 0;
     border-top: 1px solid #9A9A9A;
@@ -37,49 +37,49 @@
     font-size: 18px;
     font-weight: lighter;
     margin: 0 0 25px 0; }
-  .container .container-especial form button {
+  .form .container-especial form button {
     background-color: #080808;
     color: white;
     padding: 10px 80px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     display: inherit; }
-  .container .container-especial form h3 {
+  .form .container-especial form h3 {
     padding: 30px 0 0 0; }
-  .container .container-especial form ul {
+  .form .container-especial form ul {
     padding: 0 0 30px 0; }
-    .container .container-especial form ul li {
+    .form .container-especial form ul li {
       list-style: none;
       line-height: 28px; }
-      .container .container-especial form ul li span.text-posicion {
+      .form .container-especial form ul li span.text-posicion {
         float: right; }
 
 @media (max-width: 769px) {
-  .container {
+  .form {
     font-family: PT Sans;
     font-size: 16px;
     font-weight: normal; }
-    .container .container-especial {
+    .form .container-especial {
       padding: 0 12%; }
-      .container .container-especial ul {
+      .form .container-especial ul {
         font-family: PT Sans;
         font-size: 16px;
         font-weight: lighter; } }
 @media (max-width: 375px) and (max-width: 420px) {
-  .container h1 {
+  .form h1 {
     font-family: PT Sans;
     font-size: 45px;
     font-weight: normal; }
-  .container p {
+  .form p {
     line-height: 23px;
     padding: 25px 1px;
     font-family: PT Sans;
     font-size: 16px;
     font-weight: normal; }
-  .container .container-especial {
+  .form .container-especial {
     padding: 0 3%; }
-  .container .opcional {
+  .form .opcional {
     padding: 0; }
-  .container .text-posicion {
+  .form .text-posicion {
     float: none !important; } }
 
 /*# sourceMappingURL=main.css.map */
