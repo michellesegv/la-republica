@@ -1,4 +1,4 @@
-@mixin star-padding($padding:0 0 0 0 ){
+@mixin star-padding($padding:0 0 0 0){
   padding: $padding;
 }
 
@@ -30,6 +30,6 @@
 }
 
 @mixin margin-padding($padding-footer, $margin-footer){
-	padding-bottom: $padding-footer;
-	margin-bottom: $margin-footer;
+  padding-bottom: $padding-footer;
+  margin-bottom: $margin-footer;
 }

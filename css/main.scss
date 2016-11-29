@@ -9,10 +9,10 @@
     @include star-padding($padding:20px 0);
     @include star-text($text-align:left);
     @include star-font-family($font-family: $family-letra , $font-size:17px, $font-weight:normal)
-  }
+      }
   .container-especial{
     @include star-padding($padding:0 25%);
-    margin: 0 auto;
+    @include star-margin($margin:0 auto);
     form{
       div{
         input,input:focus{
@@ -26,6 +26,9 @@
           @include star-padding($padding:20px 15px);
           @include star-font-family($font-family:$family-letra,$font-size:18px,$font-weight:lighter);
         }
+        .opcional{
+          @include star-padding;
+        }
       }
       textarea{
         background-color: $color-input;
@@ -36,7 +39,7 @@
         @include star-size($width:100%,$height:auto);
         @include star-font-family($font-family:$family-letra,$font-size:18px,$font-weight:lighter);
         @include star-margin($margin:0 0 25px 0)
-      }
+          }
       button{
         background-color: $color-boton;
         color: white;
@@ -57,40 +60,6 @@
           }
         }
       }
-    }
-  }
-}
-@media (max-width:769px){
-  .form{
-    @include star-font-family($font-family: $family-letra  , $font-size:16px, $font-weight:normal);
-
-    .container-especial{
-      @include star-padding($padding:0 12%);
-      ul{
-        @include star-font-family($font-family:$family-letra,$font-size:16px,$font-weight:lighter);
-      }
-    }
-  }
-}
-
-@media (max-width:375px) and (max-width:420px){
-  .form{
-    h1{
-     @include star-font-family($font-family: $family-letra , $font-size:45px, $font-weight:normal);
-    }
-    p{
-      line-height: 23px;
-      @include star-padding($padding:25px 1px);
-      @include star-font-family($font-family:$family-letra , $font-size:16px, $font-weight:normal);
-    }
-    .container-especial{
-      @include star-padding($padding:0 3%);
-    }
-    .opcional{
-      @include star-padding($padding:0);
-    }
-    .text-posicion{
-      float: none !important;
     }
   }
 }
@@ -129,19 +98,56 @@ footer{
       padding-left: $padding-footer * 2;
     }
   }
-
   .tablet{
     display: $none;
   }
-  @media  (max-width: 980px){
-    .desktop{
-      display: $none;
+}
+@media (max-width:769px){
+  .form{
+    @include star-font-family($font-family: $family-letra  , $font-size:16px, $font-weight:normal);
+
+    .container-especial{
+      @include star-padding($padding:0 12%);
+      ul{
+        @include star-font-family($font-family:$family-letra,$font-size:16px,$font-weight:lighter);
+      }
     }
-    .tablet{
-      display: $block;
-      background: $color-negro;
-      color: $color-blanco;
-      @include margin-padding($padding-footer - 1, $margin-footer * 0);
+  }
+  .desktop{
+    display: $none;
+  }
+  .tablet{
+    display: $block;
+    background: $color-negro;
+    color: $color-blanco;
+    @include star-padding($padding:3%);
+    h2{
+      @include star-font-family($font-family: arial , $font-size:15px, $font-weight:normal);
+    }
+    h4{
+      @include star-font-family($font-family: arial , $font-size:9px, $font-weight:normal);
+    }
+  }
+}
+
+@media (max-width:375px) and (max-width:420px){
+  .form{
+    h1{
+      @include star-font-family($font-family: $family-letra , $font-size:45px, $font-weight:normal);
+    }
+    p{
+      line-height: 23px;
+      @include star-padding($padding:25px 1px);
+      @include star-font-family($font-family:$family-letra , $font-size:16px, $font-weight:normal);
+    }
+    .container-especial{
+      @include star-padding($padding:0 3%);
+    }
+    .opcional{
+      @include star-padding;
+    }
+    .text-posicion{
+      float: none !important;
     }
   }
 }

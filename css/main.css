@@ -26,6 +26,8 @@
     font-family: PT Sans;
     font-size: 18px;
     font-weight: lighter; }
+  .form .container-especial form div .opcional {
+    padding: 0 0 0 0; }
   .form .container-especial form textarea {
     background-color: #EEEEEE;
     border: 0;
@@ -54,34 +56,6 @@
       .form .container-especial form ul li span.text-posicion {
         float: right; }
 
-@media (max-width: 769px) {
-  .form {
-    font-family: PT Sans;
-    font-size: 16px;
-    font-weight: normal; }
-    .form .container-especial {
-      padding: 0 12%; }
-      .form .container-especial ul {
-        font-family: PT Sans;
-        font-size: 16px;
-        font-weight: lighter; } }
-@media (max-width: 375px) and (max-width: 420px) {
-  .form h1 {
-    font-family: PT Sans;
-    font-size: 45px;
-    font-weight: normal; }
-  .form p {
-    line-height: 23px;
-    padding: 25px 1px;
-    font-family: PT Sans;
-    font-size: 16px;
-    font-weight: normal; }
-  .form .container-especial {
-    padding: 0 3%; }
-  .form .opcional {
-    padding: 0; }
-  .form .text-posicion {
-    float: none !important; } }
 * {
   padding: 0 0 0 0;
   margin: 0 0 0 0; }
@@ -90,7 +64,7 @@ footer .desktop {
   padding: 2%;
   background: #E3E3E3; }
   footer .desktop span {
-    display: block;
+    display: block !important;
     cursor: pointer; }
     footer .desktop span:hover {
       color: #AEA3A3; }
@@ -111,14 +85,51 @@ footer .desktop {
     padding-left: 4%; }
 footer .tablet {
   display: none; }
-@media (max-width: 980px) {
-  footer .desktop {
+
+@media (max-width: 769px) {
+  .form {
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: normal; }
+    .form .container-especial {
+      padding: 0 12%; }
+      .form .container-especial ul {
+        font-family: PT Sans;
+        font-size: 16px;
+        font-weight: lighter; }
+
+  .desktop {
     display: none; }
-  footer .tablet {
-    display: block;
+
+  .tablet {
+    display: block !important;
     background: #000000;
     color: #FFFFFF;
-    padding-bottom: 1%;
-    margin-bottom: 0%; } }
+    padding: 3%; }
+    .tablet h2 {
+      font-family: arial;
+      font-size: 15px;
+      font-weight: normal; }
+    .tablet h4 {
+      font-family: arial;
+      font-size: 9px;
+      font-weight: normal; } }
+@media (max-width: 375px) and (max-width: 420px) {
+  .form h1 {
+    font-family: PT Sans;
+    font-size: 45px;
+    font-weight: normal; }
+  .form p {
+    line-height: 23px;
+    padding: 25px 1px;
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: normal; }
+  .form .container-especial {
+    padding: 0 3%; }
+  .form .opcional {
+    padding: 0 0 0 0; }
+  .form .text-posicion {
+    float: none !important; } }
 
 /*# sourceMappingURL=main.css.map */
